@@ -66,6 +66,10 @@ a:focus,button:focus,input:focus,textarea:focus {outline: none;}
   text-decoration: none;
 }
 
+#nav .nav-menu a:hover, #nav .nav-menu a.active {
+  text-decoration: underline;
+}
+
 /* Thing */
 
 #thing {
@@ -88,6 +92,7 @@ a:focus,button:focus,input:focus,textarea:focus {outline: none;}
 
 #slider {
   overflow: hidden;
+  margin-bottom: 4rem;
 }
 
 #slider .prev, #slider .next {
@@ -115,21 +120,42 @@ a:focus,button:focus,input:focus,textarea:focus {outline: none;}
   background: #fff;
 }
 
-#slider-inner {
-
-}
-
-#slider .slide {
-
-}
-
 #slider img {
   display: block;
   height: auto;
   width: 100%;
 }
 
+/* Map */
 
+#map {
+  overflow: hidden;
+}
+
+#map img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#map-inner {
+  position: relative;
+}
+
+#map-inner .map1 {
+  position: absolute;
+  z-index: 1;
+  width: 9%;
+  height: 12%;
+  left: 57%;
+  top: 58%;
+  border: 5px solid transparent;
+  transition: border .3s ease-in-out;
+}
+
+#map-inner .map1:hover {
+  border: 5px solid red;
+}
 
 /* media queries */
 
