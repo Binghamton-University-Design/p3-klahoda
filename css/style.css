@@ -1,5 +1,78 @@
 /*stylesheet*/
 
+/*
+Museo Slab 300
+
+font-family: museo-slab, serif;
+
+font-weight: 300;
+
+font-style: normal;
+
+
+Museo Slab 300 Italic
+
+font-family: museo-slab, serif;
+
+font-weight: 300;
+
+font-style: italic;
+
+
+Museo Slab 700
+
+font-family: museo-slab, serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Museo Slab 700 Italic
+
+font-family: museo-slab, serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+Benguiat Pro ITC Bold
+
+font-family: itc-benguiat, serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Benguiat Pro ITC Bold Italic
+
+font-family: itc-benguiat, serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Benguiat Pro ITC Book
+
+font-family: itc-benguiat, serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Benguiat Pro ITC Book Italic
+
+font-family: itc-benguiat, serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+*/
+
 /* vars */
 :root {
   --base-font-size: 16px;
@@ -8,6 +81,8 @@
 
 body {
 	margin: 0;
+  font-family: museo-slab, serif;
+  font-weight: 300;
 }
 
 a:focus,button:focus,input:focus,textarea:focus {outline: none;}
@@ -130,6 +205,7 @@ a:focus,button:focus,input:focus,textarea:focus {outline: none;}
 
 #map {
   overflow: hidden;
+  margin-bottom: 4rem;
 }
 
 #map img {
@@ -155,6 +231,74 @@ a:focus,button:focus,input:focus,textarea:focus {outline: none;}
 
 #map-inner .map1:hover {
   border: 5px solid red;
+}
+
+/* Tree */
+
+#tree {
+  overflow: hidden;
+}
+
+#tree img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#tree-inner {
+  position: relative;
+}
+
+#tree-inner .bird-overlay {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 45%;
+  right: 2rem;
+  top: 2rem;
+  border: 1px solid black;
+  background: #fff;
+}
+
+.stuff {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid black;
+}
+
+#tree-inner .bird-overlay p:last-child {
+  margin-bottom: 0;
+}
+
+#tree-inner .bird-overlay p:first-child {
+  margin-top: 0;
+}
+
+#tree-inner .bird {
+  position: absolute;
+  z-index: 1;
+  width: 6%;
+  height: 7%;
+  left: 16%;
+  top: 27%;
+  border: 5px solid red;
+}
+
+.close-icon {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  display:block;
+  box-sizing:border-box;
+  width:1rem;
+  height:1rem;
+  border-width:1px;
+  border-style: solid;
+  border-color:transparent;
+  border-radius:100%;
+  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, black 46%,  black 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, black 46%,  black 56%,transparent 56%, transparent 100%);
+  background-color:white;
+  transition: all 0.3s ease;
 }
 
 /* media queries */
